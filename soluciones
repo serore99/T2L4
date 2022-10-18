@@ -1,3 +1,4 @@
 1. ls -l | awk '{print $5,$9}' | sed 's/ /:/g'
 2. ls -l | awk '{print $5,$9}' | sed 's/ /:/g' | sort -n
 3. cat derbi.txt | sed 's/ /_/g' | sed 's/,/ /g' | awk '{print $5,$4,$3}' | grep .*empate | sort -n | sed 's/empate//g' > empate.txt
+4. cat derbi.txt | sed 's/ /_/g' | sed 's/,/ /g' | awk '{print $5,$4,$3}' | grep .*Valencia | sort -n | sed 's/Valencia//g' > valencia.txt
